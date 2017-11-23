@@ -1,0 +1,160 @@
+<?xml version='1.0' standalone='yes' ?>
+<?xml-stylesheet type="text/xml" href="#stylesheet"?>
+<!DOCTYPE catelog [<!ATTLIST xsl:stylesheet  id    ID  #REQUIRED>]>
+<GXML_Root>
+<xsl:stylesheet id="stylesheet" version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+  <html>
+  <head>
+  <style>
+body {
+    background-color: #ffffff;
+}
+h3 {
+    color: black;
+    text-align: left;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+th, td {
+    text-align: left;
+    padding: 2px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:hover{background-color:#f5f5f5}
+</style>
+<script>
+   var fname = "D:\__Process Models\SMARTree\__GIT\Local Repositories\Test folders\T0_ST0\my_second_smartree.xml";   var date_create = "";   var date_mod = "11/22/2017:10:40 PM";   var usr = "jtierney";   var info = "writable , visible";</script>
+</head>
+  <body>
+  <h3> SMARTree Data file </h3>
+   <h4> Autogen XML-XSL format v2.01</h4>
+   <table border="1" >
+       <tr bgcolor="#4F81BC">
+	    <th><font color="#ffffff">File Information</font></th>
+		<th><font color="#ffffff">.......</font></th>
+		</tr>
+        <tr bgcolor="#4F81BC"><td>Filename</td>
+		<td bgcolor="#4F81BC"><font color="#ffffff">
+									<script type="text/javascript"> document.write(fname)
+									</script></font></td>
+		</tr>
+        <tr bgcolor="#4F81BC"><td><font color="#ffffff">date created</font></td>
+        <td bgcolor="#4F81BC"><font color="#ffffff">
+									<script type="text/javascript"> document.write(date_create)
+									</script></font></td>
+		</tr>		
+        <tr bgcolor="#4F81BC"><td>date modified</td>
+        <td bgcolor="#4F81BC"><font color="#ffffff">
+									<script type="text/javascript"> document.write(date_mod)
+									</script></font></td>
+		</tr>		
+		<tr bgcolor="#4F81BC"><td><font color="#ffffff">User</font></td>
+        <td bgcolor="#4F81BC"><font color="#ffffff">
+									<script type="text/javascript"> document.write(usr)
+									</script></font></td>	
+		</tr>		
+		<tr bgcolor="#4F81BC"><td>Attributes</td>
+        <td bgcolor="#4F81BC"><font color="#ffffff">
+									<script type="text/javascript"> document.write(info)
+									</script></font></td>	
+		</tr>		
+   </table>  
+<hr></hr>
+   <table border="1">
+    <tr bgcolor="#4F81BC">
+	 <th><font color="#ffffff"> SMART Tags</font></th>
+	</tr>
+      <xsl:for-each select="GXML_Root/SMARTree/SMARTree_information/Tags/tag">
+     <tr>	  
+	    <td><xsl:value-of select="."/></td>
+	 </tr>
+      </xsl:for-each>
+   </table>
+<hr></hr>
+    <table border="1">
+      <tr bgcolor="#4F81BC">
+        <th><font color="#ffffff">Element</font></th>
+        <th><font color="#ffffff">Type</font></th>
+        <th><font color="#ffffff">Data</font></th>
+		<th><font color="#ffffff">Modified</font></th>
+      </tr>
+      <xsl:for-each select="GXML_Root/SMARTree/SMARTree_elements/elements">
+      <tr>
+        <td><xsl:value-of select="name"/></td>
+        <td><xsl:value-of select="type"/></td>
+        <td><xsl:value-of select="data"/></td>
+        <td><xsl:value-of select="modified"/></td>
+      </tr>
+      </xsl:for-each>
+    </table>
+	</body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>
+  <SMARTree mems='2'>
+    <SMARTree_information mems='5'>
+      <file_version type='String'>1.010000</file_version>
+      <user type='String'>Enter User Name</user>
+      <date type='String'>11/22/2017:10:40 PM</date>
+      <key type='String'>null</key>
+      <Tags dim='[1]' type='String'>
+        <tag> </tag>
+      </Tags>
+    </SMARTree_information>
+    <SMARTree_elements dim='[2]' type='Cluster'>
+      <elements mems='18'>
+        <parent type='String'></parent>
+        <name type='String'> My second Header</name>
+        <type type='String'>Header</type>
+        <data type='String'></data>
+        <reference type='String'></reference>
+        <parameters type='String'></parameters>
+        <symbol type='String'>1</symbol>
+        <requisite type='String'>no</requisite>
+        <locked type='String'>no</locked>
+        <lower_limit type='String'></lower_limit>
+        <upper_limit type='String'></upper_limit>
+        <precision type='String'></precision>
+        <created type='String'></created>
+        <modified type='String'></modified>
+        <user type='String'></user>
+        <key type='String'>open,0,0</key>
+        <parent_tag type='String'></parent_tag>
+        <name_tag type='String'>My second Header</name_tag>
+      </elements>
+      <elements mems='18'>
+        <parent type='String'>My second Header</parent>
+        <name type='String'> 	hi there</name>
+        <type type='String'>Text</type>
+        <data type='String'></data>
+        <reference type='String'></reference>
+        <parameters type='String'></parameters>
+        <symbol type='String'>13</symbol>
+        <requisite type='String'>no</requisite>
+        <locked type='String'>no</locked>
+        <lower_limit type='String'></lower_limit>
+        <upper_limit type='String'></upper_limit>
+        <precision type='String'></precision>
+        <created type='String'></created>
+        <modified type='String'></modified>
+        <user type='String'></user>
+        <key type='String'>open,0,0</key>
+        <parent_tag type='String'>My second Header</parent_tag>
+        <name_tag type='String'>hi there</name_tag>
+      </elements>
+    </SMARTree_elements>
+  </SMARTree>
+</GXML_Root>
