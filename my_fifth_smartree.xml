@@ -36,7 +36,7 @@ tr:nth-child(even){background-color: #f2f2f2}
 tr:hover{background-color:#f5f5f5}
 </style>
 <script>
-   var fname = "D:\__Process Models\SMARTree\__GIT\Local Repositories\Test folders\T0_ST0\my_fifth_smartree.xml";   var date_create = "";   var date_mod = "11/24/2017:5:17 PM";   var usr = "jtierney";   var info = "writable , visible";</script>
+   var fname = "D:\__Process Models\SMARTree\__GIT\Local Repositories\Test folders\T0_ST0\my_fifth_smartree.xml";   var date_create = "11/24/2017 10:17:17 PM";   var date_mod = "11/24/2017:10:23 PM";   var usr = "jtierney";   var info = "writable , visible";</script>
 </head>
   <body>
   <h3> SMARTree Data file </h3>
@@ -108,7 +108,7 @@ tr:hover{background-color:#f5f5f5}
     <SMARTree_information mems='5'>
       <file_version type='String'>1.010000</file_version>
       <user type='String'>Enter User Name</user>
-      <date type='String'>11/24/2017:5:17 PM</date>
+      <date type='String'>11/24/2017:10:23 PM</date>
       <key type='String'>null</key>
       <Tags dim='[1]' type='String'>
         <tag> </tag>
@@ -179,11 +179,9 @@ tr:hover{background-color:#f5f5f5}
         <parent type='String'>My value</parent>
         <name type='String'> 	 A Table</name>
         <type type='String'>Table</type>
-        <data type='String'>
- .....</data>
+        <data type='String'>.....</data>
         <reference type='String'></reference>
-        <parameters type='String'>
-</parameters>
+        <parameters type='String'></parameters>
         <symbol type='String'>23</symbol>
         <requisite type='String'>no</requisite>
         <locked type='String'>no</locked>
@@ -191,7 +189,7 @@ tr:hover{background-color:#f5f5f5}
         <upper_limit type='String'></upper_limit>
         <precision type='String'></precision>
         <created type='String'></created>
-        <modified type='String'> 05:16:59 PM 11/24/2017</modified>
+        <modified type='String'>05:16:59 PM 11/24/2017</modified>
         <user type='String'></user>
         <key type='String'>open,0,0</key>
         <parent_tag type='String'>My value</parent_tag>
@@ -201,9 +199,21 @@ tr:hover{background-color:#f5f5f5}
         <parent type='String'>My value</parent>
         <name type='String'> 	 A Laminate</name>
         <type type='String'>Laminate</type>
-        <data type='String'> .....</data>
+        <data type='String'> , 0.005 , 0
+ , 0.005 , 0
+ , 0.005 , 0
+ , 0.005 , 0
+ , 0.005 , 0
+ , 0.005 , 0
+ .....</data>
         <reference type='String'></reference>
-        <parameters type='String'></parameters>
+        <parameters type='String'> , 0.005 , 0 , 0 , 0 , active , No Ref.
+ , 0.005 , 0 , 0 , 0 , active , No Ref.
+ , 0.005 , 0 , 0 , 0 , active , No Ref.
+ , 0.005 , 0 , 0 , 0 , active , No Ref.
+ , 0.005 , 0 , 0 , 0 , active , No Ref.
+ , 0.005 , 0 , 0 , 0 , active , No Ref.
+</parameters>
         <symbol type='String'>11</symbol>
         <requisite type='String'>no</requisite>
         <locked type='String'>no</locked>
@@ -211,7 +221,7 @@ tr:hover{background-color:#f5f5f5}
         <upper_limit type='String'></upper_limit>
         <precision type='String'></precision>
         <created type='String'></created>
-        <modified type='String'> 05:17:07 PM 11/24/2017</modified>
+        <modified type='String'> 10:23:27 PM 11/24/2017</modified>
         <user type='String'></user>
         <key type='String'>open,0,0</key>
         <parent_tag type='String'>My value</parent_tag>
